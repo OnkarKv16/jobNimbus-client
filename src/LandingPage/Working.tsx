@@ -14,7 +14,7 @@ const Working=()=>{
                     <div className="relative">
                         <img className="w-[30rem]" src="/Working/Girl.png" alt="girl" />
                         <div className="w-36 flex top-[15%] absolute right-0 flex-col items-center gap-1 border border-bright-sun-400 rounded-xl py-3 px-3 backdrop-blur-lg ">
-                            <Avatar className="!h-16 !w-16" src="avatar-7.png" alt="it's me" />
+                            <Avatar className="!h-16 !w-16" src="avatar1.png" alt="it's me" />
                             <div className="text-sm font-semibold text-mine-shaft-200 text-center">
                                 Complete your profile!
                             </div>

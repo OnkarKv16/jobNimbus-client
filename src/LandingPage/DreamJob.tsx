@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { TextInput, Avatar } from '@mantine/core';
 import { IconSearch } from "@tabler/icons-react";
 const DreamJob =()=> {
@@ -34,9 +34,9 @@ const DreamJob =()=> {
                             10K+ got job
                         </div>
                         <Avatar.Group>
-                            <Avatar src="avatar-7.png" />
-                            <Avatar src="avatar-8.png" />
-                            <Avatar src="avatar-9.png" />
+                            <Avatar src="avatar.png" />
+                            <Avatar src="avatar1.png" />
+                            <Avatar src="avatar2.png" />
                             <Avatar>+9K</Avatar>
                         </Avatar.Group>
                     </div>

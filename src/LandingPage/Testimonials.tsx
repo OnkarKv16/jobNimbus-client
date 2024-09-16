@@ -12,7 +12,7 @@ const Testimonials =()=>{
                 testimonials.map((data, index)=><div key={index} className="flex flex-col gap-3 w-[23%] border-bright-sun-400 border rounded-xl mt-10 p-3 ">
                     <div className="flex gap-2 items-center">
                         <div>
-                            <Avatar className="!h-14 !w-14" src="avatar-9.png" alt="it's me"/>
+                            <Avatar className="!h-14 !w-14" src="Avatar.png" alt="it's me"/>
                         </div>
                         <div>
                             <div className="text-lg text-mine-shaft-100 font-semibold">{data.name}</div>

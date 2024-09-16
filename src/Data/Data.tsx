@@ -5,6 +5,7 @@ const jobCategory = [
         "name": "Digital Marketing",
         "desc": "Promote brands online with marketing strategies",
         "jobs": "1k"
+        
     },
     {
         "name": "Web Developer",
@@ -83,12 +84,12 @@ const testimonials = [
     {
         "name": "Swapnil Pandey",
         "testimonial": "I secured a job offer within days of applying. Exceptional user experience and support.",
-        "rating": 4
+        "rating": 4,
     },
     {
         "name": "Pavan Barnana",
         "testimonial": "Highly efficient job portal with excellent resources. Helped me land a great position.",
-        "rating": 4
+        "rating": 4, 
     }
 ]
 const footerLinks = [

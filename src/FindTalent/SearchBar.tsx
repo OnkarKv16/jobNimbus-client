@@ -1,15 +1,19 @@
-import { Divider, RangeSlider } from "@mantine/core";
-
-import  MultiInput  from "./MultiInput";
+import { Divider, Input, RangeSlider } from "@mantine/core";
 import { useState } from "react";
-import { dropdownData } from "../Data/JobsData";
+import { searchFields } from "../Data/TalentData";
+import MultiInput from "../FindJobs/MultiInput";
+import { IconUserCircle } from "@tabler/icons-react";
 
 const SearchBar =()=>{
     const [value, setValue] = useState<[number, number]>([1, 100]);
     return (
-        <div className="flex px-5 py-8 ">
+        <div className="flex px-5 py-8 items-center !text-mine-shaft-100">
+            <div className="flex items-center">
+                <div className="text-bright-sun-400 bg-mine-shaft-900 rounded-full p-1 mr-2"><IconUserCircle size={20}/></div>
+                <Input className="[&_input]:!placeholder-mine-shaft-200" variant="unstyled" placeholder="Talent Name" />
+            </div>
             {
-                dropdownData.map((item, index) =><> <div key={index} className="w-1/5">
+                searchFields.map((item, index) =><> <div key={index} className="w-1/5">
                     <MultiInput {...item}/>
                 </div>
                 <Divider mr="xs" size="sm" orientation="vertical" />
@@ -30,4 +34,4 @@ const SearchBar =()=>{
         </div>
     )
 }; 
-export default SearchBar;
+export default SearchBar; 

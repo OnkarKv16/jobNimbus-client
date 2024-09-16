@@ -1,5 +1,5 @@
 import { IconBrandSafari, IconBell, IconSettings,} from "@tabler/icons-react";
-import { Avatar, Indicator} from '@mantine/core';
+import { Avatar, Divider, Indicator} from '@mantine/core';
 import NavLinks from "./NavLinks";
 
 const Header = () => {
@@ -11,11 +11,12 @@ const Header = () => {
             </div>
            
             <NavLinks />
-            <div className="flex gap-4 items-center gap-2">
+            
+            <div className="flex items-center gap-2">
             
                 <div className="flex items-center gap-2">
                     <div>Morbius</div>
-                    <Avatar src="avatar-9.png" alt="it's me" />
+                    <Avatar src="avatar.png" alt="it's me" />
                 </div>
                 
                 <div className="bg-mine-shaft-900 p-1.5 rounded-full">
@@ -27,8 +28,8 @@ const Header = () => {
                 <div className="bg-mine-shaft-900 p-1.5 rounded-full"> 
                     <IconSettings stroke={1.5}/>
                 </div>
-               
             </div>
+            
         </div>
     );
 }
