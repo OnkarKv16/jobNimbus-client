@@ -7,7 +7,7 @@ import { dropdownData } from "../Data/JobsData";
 const SearchBar =()=>{
     const [value, setValue] = useState<[number, number]>([1, 100]);
     return (
-        <div className="flex px-5 py-8 ">
+        <div className="flex px-5 py-5 ">
             {
                 dropdownData.map((item, index) =><> <div key={index} className="w-1/5">
                     <MultiInput {...item}/>

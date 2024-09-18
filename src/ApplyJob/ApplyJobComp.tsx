@@ -24,7 +24,7 @@ const ApplyJobComp =()=>{
     }
     return (
         <>
-        <div className="w-2/3 mx-auto">
+        <div className="w-2/3 mx-auto p-4">
             <LoadingOverlay className="!fixed "
             visible={submit}
             zIndex={100}
