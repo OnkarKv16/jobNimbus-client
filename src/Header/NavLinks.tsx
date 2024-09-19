@@ -9,13 +9,14 @@ const NavLinks=()=>{
         {name:"Post Jobs", url:"post-jobs"},
         {name:"posted jobs", url:"posted-job"},
         {name:"Job History", url:"job-history"},
+        {name:"Sign Up", url:"signup"},
     ]
     const location = useLocation();
     return (
         <div className="flex gap-5 text-mine-shaft-300 h-full items-center">
             {
-            links.map((link, index)=><div className={`${location.pathname=="/"+link.url?" border-bright-sun-400 text-bright-sun-400":" border-transparent"} border-t-[3px] h-full flex items-center`}>
-                <Link key={index} to={link.url}> {link.name}</Link>
+            links.map((link, index)=><div className={`${location.pathname==="/"+link.url?" border-bright-sun-400 text-bright-sun-400":"border-transparent"} border-t-[3px] h-full flex items-center`}>
+                <Link className="hover:text-mine-shaft-200" key={index} to={link.url}> {link.name}</Link>
                 <Divider size="sm" mx="md" />
             </div>)
             }

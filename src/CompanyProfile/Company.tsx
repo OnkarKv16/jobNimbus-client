@@ -23,17 +23,17 @@ const Company =()=>{
                 </div>
                 <Divider my="xl"  />
                 <div>
-                <Tabs variant="outline" radius="lg" defaultValue="about">
-                    <Tabs.List className="[&_button]:!text-lg mb-5 font-semibold [&_button[data-active='true']]:text-bright-sun-400">
-                        <Tabs.Tab value="about">About</Tabs.Tab>
-                        <Tabs.Tab value="jobs">Jobs</Tabs.Tab>
-                        <Tabs.Tab value="employees">Employees</Tabs.Tab>
-                    </Tabs.List>
+                    <Tabs variant="outline" radius="lg" defaultValue="about">
+                        <Tabs.List className="[&_button]:!text-lg mb-5 font-semibold [&_button[data-active='true']]:text-bright-sun-400">
+                            <Tabs.Tab value="about">About</Tabs.Tab>
+                            <Tabs.Tab value="jobs">Jobs</Tabs.Tab>
+                            <Tabs.Tab value="employees">Employees</Tabs.Tab>
+                        </Tabs.List>
 
-                    <Tabs.Panel value="about"><AboutComp/></Tabs.Panel>
-                    <Tabs.Panel value="jobs"><ComapanyJobs/></Tabs.Panel>
-                    <Tabs.Panel value="employees"><ComapanyEmployees/></Tabs.Panel>
-                </Tabs>
+                        <Tabs.Panel value="about"><AboutComp/></Tabs.Panel>
+                        <Tabs.Panel value="jobs"><ComapanyJobs/></Tabs.Panel>
+                        <Tabs.Panel value="employees"><ComapanyEmployees/></Tabs.Panel>
+                    </Tabs>
                 </div>
             </div>   
         </div>
