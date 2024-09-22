@@ -1,6 +1,6 @@
 import { Divider } from "@mantine/core";
-import Postedjob from "../PostedJob/PostedJob";
-import PostedJobDesc from "../PostedJob/PostedJobDesc";
+import Postedjob from "../Components/PostedJob/PostedJob";
+import PostedJobDesc from "../Components/PostedJob/PostedJobDesc";
 
 const PostedJobPage=()=>{
     return (

@@ -1,5 +1,5 @@
+import PostJob from "../Components/PostJob/PostJob";
 
-import PostJob from "../PostJob/PostJob";
 
 const PostJobPage =()=>{
     return (

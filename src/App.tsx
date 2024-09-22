@@ -5,10 +5,9 @@ import '@mantine/core/styles.css';
 import '@mantine/carousel/styles.css';
 import '@mantine/tiptap/styles.css';
 import '@mantine/dates/styles.css';
+import '@mantine/notifications/styles.css';
 import HomePage from './Pages/HomePage';
 import FindJobs from './Pages/FindJobs';
-import Header from './Header/Header';
-import Footer from './Footer/Footer';
 import FindTalentPage from './Pages/FindTalentPage';
 import TalentProfilePage from './Pages/TalentProfilePage';
 import PostJobPage from './Pages/PostJobPage';
@@ -19,6 +18,9 @@ import PostedJobPage from './Pages/PostedJobPage';
 import JobHistoryPage from './Pages/JobHistoryPage';
 import SignUpPage from './Pages/SignUpPage';
 import ProfilePage from './Pages/ProfilePage';
+import Header from './Components/Header/Header';
+import Footer from './Components/Footer/Footer';
+import { Notifications } from '@mantine/notifications';
 
 
 
@@ -39,6 +41,7 @@ function App() {
   })
   return (
     <MantineProvider defaultColorScheme='dark' theme={theme}>
+      <Notifications position="top-center" zIndex={1000}/>
         <BrowserRouter>
         <div className='relative'>
         <Header/>
